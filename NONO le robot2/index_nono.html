@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style_nono.css" rel="stylesheet" type="text/css">
+    
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="robot_transparent.png" alt="logo" class="logo">
+            Nono Robot Visualisation Concept
+        </h1>
+    </header>
+    <main id="container">
+        <div id="liveView" class="camView"></div>
+        <video autoplay="true" id="videoElement">
+
+        </video>
+        <div id="list">
+
+        </div>
+
+        <div id="buttons_gauche">
+        
+                <input type="button" value="Turn Webcam ON" onclick="webcamON();" />
+                <input type="button" value="Turn Webcam OFF" onclick="webcamOFF();" />
+                
+            
+        </div>
+
+        <div id="button_droite">
+            <input type="button" value="Clear history" onclick="" />
+        </div>
+    </main>
+    
+<!-- Import TensorFlow.js library -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+<!-- Load the coco-ssd model to use to recognize things in images -->
+<script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+<script src="script_nono.js"></script>
+</body>
+
+</html>
